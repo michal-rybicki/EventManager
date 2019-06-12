@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>864</width>
+    <height>637</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>864</width>
+    <height>637</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTableWidget" name="wystawcy">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>841</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::NoSelection</enum>
+    </property>
+    <property name="columnCount">
+     <number>7</number>
+    </property>
+    <column>
+     <property name="text">
+      <string>Stoisko</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Stoły</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Gabloty</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Barierki słupkowe</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Barierki stalowe</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Krzesła</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Prąd</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTableWidget" name="suma">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>420</y>
+      <width>841</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::NoSelection</enum>
+    </property>
+    <property name="columnCount">
+     <number>6</number>
+    </property>
+    <column>
+     <property name="text">
+      <string>Magazyn</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Stoły</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Gabloty</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Barierki słupkowe</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Barierki stalowe</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Krzesła</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>10</y>
+      <width>651</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButtonSprzet">
+       <property name="text">
+        <string>Dodaj magazyn</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonStoisko">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Dodaj stoisko</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="EdytujMagazyny">
+       <property name="text">
+        <string>Edycja magazynów</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="EdytujStoiska">
+       <property name="text">
+        <string>Edycja stoisk</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="Przelicz">
+       <property name="text">
+        <string>Przelicz na szt.</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QRadioButton" name="wsumie">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>390</y>
+      <width>141</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Łącznie w magazynie</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="wolne">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>390</y>
+      <width>141</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wolne elementy</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="zerezerwowane">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>390</y>
+      <width>161</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zarezerwowane elementy</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="suma_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>600</y>
+      <width>841</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::NoSelection</enum>
+    </property>
+    <property name="columnCount">
+     <number>6</number>
+    </property>
+    <column>
+     <property name="text">
+      <string>Magazyn</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Stoły</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Gabloty</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Barierki słupkowe</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Barierki stalowe</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Krzesła</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>864</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPlik">
+    <property name="title">
+     <string>Plik</string>
+    </property>
+    <addaction name="actionNowy"/>
+    <addaction name="actionOtw_rz"/>
+    <addaction name="actionZapisz"/>
+    <addaction name="actionZapisz_jako"/>
+    <addaction name="separator"/>
+    <addaction name="actionWczytaj_z_bazy_danych"/>
+    <addaction name="actionZapisz_do_bazy_danych"/>
+    <addaction name="separator"/>
+    <addaction name="actionZamknij"/>
+   </widget>
+   <widget class="QMenu" name="menuWystawa">
+    <property name="title">
+     <string>Edycja</string>
+    </property>
+    <addaction name="actionW_a_ciwo_ci_wystawy"/>
+    <addaction name="separator"/>
+    <addaction name="actionPobierz_dane_z_innej_wystawy"/>
+   </widget>
+   <addaction name="menuPlik"/>
+   <addaction name="menuWystawa"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNowy">
+   <property name="text">
+    <string>Nowy</string>
+   </property>
+  </action>
+  <action name="actionOtw_rz">
+   <property name="text">
+    <string>Otwórz...</string>
+   </property>
+  </action>
+  <action name="actionZapisz">
+   <property name="text">
+    <string>Zapisz</string>
+   </property>
+  </action>
+  <action name="actionZamknij">
+   <property name="text">
+    <string>Zamknij</string>
+   </property>
+  </action>
+  <action name="actionZapisz_jako">
+   <property name="text">
+    <string>Zapisz jako...</string>
+   </property>
+  </action>
+  <action name="actionZapisz_do_bazy_danych">
+   <property name="text">
+    <string>Zapisz do bazy danych</string>
+   </property>
+  </action>
+  <action name="actionWczytaj_z_bazy_danych">
+   <property name="text">
+    <string>Wczytaj z bazy danych...</string>
+   </property>
+  </action>
+  <action name="actionW_a_ciwo_ci_wystawy">
+   <property name="text">
+    <string>Właściwości wystawy..</string>
+   </property>
+  </action>
+  <action name="actionPobierz_dane_z_innej_wystawy">
+   <property name="text">
+    <string>Pobierz dane z innej wystawy...</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
